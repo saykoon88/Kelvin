@@ -294,6 +294,98 @@ h4 { font-size: 1.05rem; font-family: var(--sans); font-weight: 600; }
 }
 
 /* ============================================================
+   FAVIKON RANKINGS
+   ============================================================ */
+.favikon-rankings {
+  background: var(--bg-card-alt);
+  border-top: 3px solid var(--gold);
+  border-bottom: 1px solid var(--gold-border);
+  padding: 56px 24px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.favikon-rankings::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 120% at 50% 0%, rgba(201,168,96,.10) 0%, transparent 65%);
+  pointer-events: none;
+}
+.favikon-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  position: relative;
+}
+.favikon-eyebrow {
+  display: inline-block;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.favikon-heading {
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+  color: var(--text);
+  font-weight: 600;
+  margin-bottom: 36px;
+}
+.favikon-badges {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.favikon-badge {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 32px;
+  background: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 24px rgba(0,0,0,.3), inset 0 1px 0 rgba(201,168,96,.12);
+  transition: transform .25s, box-shadow .25s;
+}
+.favikon-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 36px rgba(0,0,0,.4), 0 0 0 1px rgba(201,168,96,.4), inset 0 1px 0 rgba(201,168,96,.2);
+}
+.favikon-rank {
+  font-family: var(--serif);
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(155deg, var(--gold-light) 0%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.favikon-info {
+  text-align: left;
+}
+.favikon-info strong {
+  display: block;
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+.favikon-info span {
+  font-size: .7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+@media (max-width: 640px) {
+  .favikon-badge { padding: 16px 24px; }
+  .favikon-rank  { font-size: 2.2rem; }
+}
+
+/* ============================================================
    STATS BAR
    ============================================================ */
 .stats-bar {
