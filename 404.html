@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found | Dr. Kelvin Ng</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <style>
+    .error-section {
+      min-height: calc(100vh - 200px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 24px;
+      text-align: center;
+    }
+    .error-inner { max-width: 520px; margin: 0 auto; }
+    .error-code {
+      font-family: var(--serif);
+      font-size: clamp(80px, 15vw, 140px);
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 16px;
+      opacity: 0.8;
+    }
+    .error-title {
+      font-family: var(--serif);
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+    .error-desc {
+      font-size: 1rem;
+      color: var(--text-sub);
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+    .error-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Dr. Kelvin Ng</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#speaking">Speaking</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#testimonials">Testimonials</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/#contact" class="nav-cta">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="error-section">
+    <div class="error-inner">
+      <div class="error-code">404</div>
+      <h1 class="error-title">This page doesn't exist</h1>
+      <p class="error-desc">The link may be broken, or the page may have moved. Let's get you back on track.</p>
+      <div class="error-actions">
+        <a href="/" class="btn-primary">Go to Homepage</a>
+        <a href="/blog/" class="btn-secondary">Read the Blog</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-name">Dr. Kelvin Ng</span>
+        <span class="footer-tagline">Chiropractor &nbsp;&middot;&nbsp; Speaker &nbsp;&middot;&nbsp; Certified Ergonomist</span>
+      </div>
+      <nav class="footer-links">
+        <a href="/">Home</a>
+        <a href="/#about">About</a>
+        <a href="/#speaking">Speaking</a>
+        <a href="/#services">Services</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#contact">Contact</a>
+        <a href="https://www.familyhealthchiro.sg" target="_blank" rel="noopener">Clinic Website</a>
+      </nav>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dr. Kelvin Ng Say Koon. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
