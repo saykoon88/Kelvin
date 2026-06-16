@@ -435,7 +435,7 @@ h4 { font-size: 1.05rem; font-family: var(--sans); font-weight: 600; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: right top;
 }
 .about-content .section-label { display: block; }
 .about-content h2 { margin-bottom: 24px; }
