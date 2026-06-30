@@ -841,30 +841,12 @@ h4 { font-size: 1.05rem; font-family: var(--sans); font-weight: 600; }
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
-.clients-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-}
-.client-logo {
-  background: var(--bg);
-  border: 1px solid var(--border);
+.clients-logo-image img {
+  width: 100%;
+  max-width: 960px;
+  display: block;
+  margin: 0 auto;
   border-radius: var(--radius);
-  padding: 14px 12px;
-  text-align: center;
-  font-size: .73rem;
-  font-weight: 500;
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 56px;
-  line-height: 1.4;
-  transition: border-color .2s, color .2s;
-}
-.client-logo:hover {
-  border-color: var(--gold-border);
-  color: var(--text-sub);
 }
 
 /* ============================================================
@@ -1146,7 +1128,6 @@ footer {
   .ergo-components { grid-template-columns: 1fr; }
 
   /* Clients */
-  .clients-grid { grid-template-columns: repeat(3, 1fr); }
 
   /* Testimonials */
   .testimonials-grid { grid-template-columns: 1fr; }
@@ -1161,7 +1142,6 @@ footer {
     padding-top: 72px;
     padding-bottom: 72px;
   }
-  .clients-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-ctas { flex-direction: column; }
   .services-cta { flex-direction: column; align-items: center; }
   .contact-methods { flex-direction: column; align-items: stretch; }
